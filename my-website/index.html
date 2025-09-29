@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Club Sign Up</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: #fff;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 32px 40px 24px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        }
+        h1 {
+            color: #388e3c;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        h3 {
+            color: #1976d2;
+            margin-top: 24px;
+        }
+        label {
+            margin-right: 12px;
+            font-weight: 500;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 6px;
+        }
+        select, textarea, input[type="submit"], input[type="text"], input[type="email"] {
+            display: block;
+            width: 100%;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #bdbdbd;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background-color: #388e3c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        input[type="submit"]:hover {
+            background-color: #2e7031;
+        }
+        .minecraft-img {
+            display: block;
+            margin: 0 auto 24px auto;
+            width: 120px;
+            border-radius: 8px;
+        }
+        .note {
+            font-size: 0.95em;
+            color: #616161;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up For Minecraft Club</h1>
+        <div class="note">Join our club to play, learn, and build together!</div>
+        <form method="get">
+            <h3>Your Name</h3>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <h3>Email Address</h3>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <h3>Do you already own the game Minecraft?</h3>
+            <label for="yes">
+                <input type="radio" id="yes" name="minecraft_own" value="yes" required> Yes
+            </label>
+            <label for="no">
+                <input type="radio" id="no" name="minecraft_own" value="no"> No
+            </label>
+            <h3>How good is your computer?</h3>
+            <label for="stars">On a scale of 1-5 (5 is the best):</label>
+            <select name="stars" id="stars" required>
+                <option value="">Select one</option>
+                <option value="5">5 - The best</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Alright</option>
+                <option value="2">2 - Bad</option>
+                <option value="1">1 - Worst</option>
+            </select>
+            <h3>What computer do you have?</h3>
+            <textarea name="computer" rows="4" cols="40" placeholder="e.g. Windows 10 laptop, MacBook Air, Chromebook, etc."></textarea>
+
+            <input type="submit" value="Submit Form">

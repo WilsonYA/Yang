@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save the Turtles Petition</title>
+</head>
+<body>
+    <h1>Save the Turtles Petition 🐢</h1>
+    <p>Plastic waste is harming sea turtles. Sign this petition to show your support in reducing single-use plastics!</p>
+    <form action="results.html" method="get">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <p><strong>Do you pledge to reduce plastic use?</strong></p>
+        <input type="radio" id="yes" name="pledge" value="yes" required>
+        <label for="yes">Yes!</label><br>
+        <input type="radio" id="maybe" name="pledge" value="maybe">
+        <label for="maybe">Maybe, I’ll try.</label><br>
+        <input type="radio" id="no" name="pledge" value="no">
+        <label for="no">Not yet.</label><br>
+        <label for="action">What action will you take?</label>
+        <select id="action" name="action">
+            <option value="reusable-bag">Use reusable bags</option>
+            <option value="metal-straw">Switch to metal straws</option>
+            <option value="bottle">Carry a refillable water bottle</option>
+        </select>
+<br>
+        <label for="message">Why do you care about turtles?</label>
+        <textarea id="message" name="message" rows="1" placeholder="Write a short message..."></textarea>
+
+        <input type="submit" value="Sign Petition" class="submit-btn">
+    </form>
+
+    <img src="turtle.jpg" alt="Sea turtle" width="400">
+
+</body>
+</html>
